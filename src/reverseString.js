@@ -2,17 +2,17 @@
  * Created by Maranatha Ilesanmi on 3/11/2017.
  */
 
-function reverseString(n){
-    if (n.length === 0){
+function reverseString(word){
+    if (word.length === 0){
         return null;
     } else {
-        var stringLength = n.length;
+        var stringLength = word.length;
         var reversedText = "";
 
         for (i = stringLength; i >= 0; i--) {
-            reversedText += n.charAt(i);
+            reversedText += word.charAt(i);
         }
-        if (n === reversedText) {
+        if (word === reversedText) {
             return true;
         }
         return reversedText;
